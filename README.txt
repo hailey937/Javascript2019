@@ -8,3 +8,5 @@ Learning Javascript in 2019
     document => Refers to the web page
     getElementById() => Access a specific HTML item by ID
     innerHTML => Access the text between two like tags
+
+- parseInt: turns strings into integers
