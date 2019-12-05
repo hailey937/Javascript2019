@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Basic Functions</title>
+
+    <script type="text/javascript">
+      function addNums(){
+        var num1 = parseInt(document.getElementById('num1').value);
+        var num2 = parseInt(document.getElementById('num2').value);
+        var sum = num1 + num2;
+
+        document.getElementById('answer').innerHTML = sum;
+      }
+    </script>
+
+  </head>
+  <body>
+    Number 1: <input type="text" name="num1" id="num1"><br />
+    Number 2: <input type="text" name="num2" id="num2"><br />
+    <button type="button" name="button" onClick="addNums()">Add</button><br />
+    <p id="answer">The Answer Is: </p>
+  </body>
+</html>
