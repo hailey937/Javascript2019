@@ -9,4 +9,4 @@ Learning Javascript in 2019
     getElementById() => Access a specific HTML item by ID
     innerHTML => Access the text between two like tags
 
-- parseInt: turns strings into integers
+- parseInt: turns strings into integers/numbers
