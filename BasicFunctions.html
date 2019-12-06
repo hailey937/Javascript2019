@@ -12,6 +12,27 @@
 
         document.getElementById('answer').innerHTML = sum;
       }
+      function subtractNums(){
+        var num1 = parseInt(document.getElementById('num1').value);
+        var num2 = parseInt(document.getElementById('num2').value);
+        var sum = num1 - num2;
+
+        document.getElementById('answer').innerHTML = sum;
+      }
+      function multiplyNums(){
+        var num1 = parseInt(document.getElementById('num1').value);
+        var num2 = parseInt(document.getElementById('num2').value);
+        var sum = num1 * num2;
+
+        document.getElementById('answer').innerHTML = sum;
+      }
+      function divideNums(){
+        var num1 = parseInt(document.getElementById('num1').value);
+        var num2 = parseInt(document.getElementById('num2').value);
+        var sum = num1 / num2;
+
+        document.getElementById('answer').innerHTML = sum;
+      }
     </script>
 
   </head>
@@ -19,6 +40,10 @@
     Number 1: <input type="text" name="num1" id="num1"><br />
     Number 2: <input type="text" name="num2" id="num2"><br />
     <button type="button" name="button" onClick="addNums()">Add</button><br />
+    <button type="button" name="button" onClick="subtractNums()">Subtract</button><br />
+    <button type="button" name="button" onClick="multiplyNums()">Multiply</button><br />
+    <button type="button" name="button" onClick="divideNums()">Divide</button><br />
     <p id="answer">The Answer Is: </p>
+
   </body>
 </html>
