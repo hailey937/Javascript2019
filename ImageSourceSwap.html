@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Swapping the Image Source</title>
+    <script type="text/javascript">
+      function swapImages(){
+        document.getElementById('Akhal-Teke').src="img/Optimus-Prime.jpg";
+      }
+      function swapAgain(){
+        document.getElementById('Akhal-Teke').src="img/Akhal-Teke.jpg";
+      }
+      function yes(){
+        alert("My Image!!!!");
+      }
+    </script>
+  </head>
+  <body>
+    <img src="img/Akhal-Teke.jpg" id="Akhal-Teke" onmouseover="swapImages()" onmouseout="swapAgain()" onclick="yes()" />
+
+  </body>
+</html>
