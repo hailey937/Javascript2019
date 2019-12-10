@@ -27,3 +27,6 @@ Learning Javascript in 2019
 - Swapping: back and forth between things (ex. images)
 - src: source
 - Strings: letters/words
+
+CSS in JavaScript
+- use .style.
