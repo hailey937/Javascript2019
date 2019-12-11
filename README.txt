@@ -30,3 +30,12 @@ Learning Javascript in 2019
 
 CSS in JavaScript
 - use .style.
+
+Random Logic
+- Math.random: returns a random number between 0 (inclusive),  and 1 (exclusive)
+- if/else statement: part of "conditional" statements, which are used to perform different actions based on different conditions
+    - executes a block of code if a specified condition is true. If the condition is false, another block of code can be executed
+        - Use if to specify a block of code to be executed, if a specified condition is true
+        - Use else to specify a block of code to be executed, if the same condition is false
+        - Use else if to specify a new condition to test, if the first condition is false
+        - Use switch to select one of many blocks of code to be executed
