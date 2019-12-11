@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Random Logic</title>
+    <script type="text/javascript">
+      function generateNumber(){
+        /*
+        * Multiply random by the range and add the min
+        * range = max - min + 1
+        * Example: Generate 1 - 20
+        * range = 20 - 1 + 1 = 20
+        *
+        * General Form
+        * parseInt(Math.random() * range + min);
+        */
+        var num = parseInt(Math.random() * 20) + 1;
+        document.getElementById("number").innerHTML = num;
+
+        if(num > 15){
+          document.getElementById("logic").innerHTML = "This will probably work!";
+        }else if(num > 10){
+          document.getElementById("logic").innerHTML = "You rolled above average!";
+        }else if (num>= 5){
+          document.getElementById("logic").innerHTML = "This might work.";
+        }else{
+          document.getElementById("logic").innerHTML = "You might be having a bad day...";
+        }
+
+      }
+    </script>
+  </head>
+  <body>
+    <div>Your number is: <span id="number"></span></div>
+    <button type="button" onClick="generateNumber()">Generate</button>
+    <div id="logic"></div>
+  </body>
+</html>
