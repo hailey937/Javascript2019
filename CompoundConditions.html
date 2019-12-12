@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Compound Conditions</title>
+    <script type="text/javascript">
+      /*
+       * Base tax rate 1%
+       *
+       * Single -> Standard Deduction $12,200
+       * Married -> Standard Deduction $24,400
+       *
+       * Married and over $168,400 -> 24%
+       * Single and over $84,200 -> 24%
+       *
+       * Married and less than 168,400 -> 22%
+       * Single and less than $84,200 -> 22%
+      **/
+      function calculate(){
+        var status = document.getElementById("status").value;
+        var income = document.getElementById("money").value;
+        var taxes;
+        if(status == "single" && income <= 84200){
+           taxes = (income - 12200) * .22;
+        }
+        if(status == "married" && income <= 168400){
+           taxes = (income - 24400) * .22;
+        }
+        if(status == "single" && income > 84200){
+           taxes = (income - 12200) * .24;
+        }
+        if(status == "married" && income > 168400){
+           taxes = (income - 24400) * .24;
+        }
+
+        document.getElementById("output").innerHTML = taxes;
+      }
+    </script>
+  </head>
+  <body>
+    Money Made: <input type="text" name="money" id="money"><br />
+    Status: <select name="status" id="status">
+      <option value="single">Single</option>
+      <option value="married">Married</option>
+    </select><br />
+    <button type="button" name="Calculate" onClick="calculate()">Calculate</button>
+    <div id="output"></div>
+  </body>
+</html>
