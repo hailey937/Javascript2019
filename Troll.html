@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <title>Welcome to this</title>
+    <title>Welcome to the Best Website Ever!</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -11,13 +11,40 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript">
-
+      function loop(){
+        var i;
+        for(i=0; i < 5; i++){
+          alert("Sorry! You cannot subscribe!");
+        }
+      }
     </script>
   </head>
   <body>
     <div class="jumbotron text-center">
-      <h1 class="text-success">Dramatically Engage</h1>
-      <p class="text-success">Objectively innovate empowered manufactured products whereas parallel platforms.</p>
+      <h1>Welcome to the Best Website Ever!</h1>
     </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h5>Subscribe to Our Newsletter!</h5>
+            <form class="form-inline justify-content-center" action="/action_page.php">
+              <input type="email" class="form-control mb-2 mr-sm-2" id="email" placeholder="email address" name="email">
+              <button type="button" class="btn btn-light mb-2" onClick="loop()">Subscribe</button>
+            </form>
+        </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="Images/Ben.jpg" class="Rescues" alt="Ben Horse">
+        </div>
+        <div class="col-sm-4">
+          <img src="Images/Laz.jpg" class="Rescues" alt="Laz Horse">
+        </div>
+        <div class="col-sm-4">
+          <img src="Images/Papi.jpg" class="Rescues" alt="Papi Horse">
+        </div>
+      </div>
+
+      </div>
   </body>
 </html>
