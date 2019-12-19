@@ -17,9 +17,43 @@
           alert("Sorry! You cannot subscribe!");
         }
       }
+        function swapImages(){
+          document.getElementById('Laz-Horse').src="Images/img2.gif";
+        }
+        function swapAgain(){
+          document.getElementById('Laz-Horse').src="Images/Laz.jpg";
+        }
+        function yes(){
+          alert("Sorry, you cannot see any details :)");
+        }
+        function loop2(){
+          var i;
+          for(i=0; i < 5; i++){
+            alert("Sorry! You cannot search!");
+          }
+        }
+        function loop3(){
+          var i;
+          for(i=0; i < 9; i++){
+            alert("I told you that you can't search!");
+          }
+        }
     </script>
   </head>
   <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <ul class="navbar-nav">
+        <li><a class="navbar-brand" href="troll.html"><i class="fas fa-fire"></i></a></li>
+        <li class="nav-item"><a href="troll.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="trollabout.html" class="nav-link">About Us</a></li>
+        <li class="nav-item"><a href="trollcontact.html" class="nav-link">Contact Us</a></li>
+      </ul>
+        <form class="form-inline" action="/action_page.php">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" onClick="loop2()">
+            <button class="btn btn-light" type="submit" onClick="loop3()">Search</button>
+        </form>
+    </nav>
+
     <div class="jumbotron text-center">
       <h1>Welcome to the Best Website Ever!</h1>
     </div>
@@ -33,18 +67,19 @@
               <button type="button" class="btn btn-light mb-2" onClick="loop()">Subscribe</button>
             </form>
         </div>
+      </div>
+        <br><br>
       <div class="row">
-        <div class="col-sm-4">
-          <img src="Images/Ben.jpg" class="Rescues" alt="Ben Horse">
-        </div>
-        <div class="col-sm-4">
-          <img src="Images/Laz.jpg" class="Rescues" alt="Laz Horse">
-        </div>
-        <div class="col-sm-4">
-          <img src="Images/Papi.jpg" class="Rescues" alt="Papi Horse">
+        <div class="col-sm-12 text-center">
+          <h5>Hover Over or Click the Image to see Details!</h5>
         </div>
       </div>
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <img src="Images/Laz.jpg" class="Rescues" id="Laz-Horse" onmouseover="swapImages()" onmouseout="swapAgain()" onclick="yes()">
+        </div>
+      </div>
+    </div>
 
-      </div>
   </body>
 </html>
