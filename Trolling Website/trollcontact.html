@@ -9,7 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript">
+    <script>
       function error1(){
         var i;
         for(i=0; i < 9; i++){
@@ -36,15 +36,15 @@
         <div class="col-sm-12">
             <div class="form-group">
               <label for="fname">First Name *</label>
-              <input class="form-control" type="text" name="firstName" id="fname" //onmouseover="error1()">
+              <input class="form-control" type="text" name="firstName" id="fname" onmouseover="error1()">
             </div>
             <div class="form-group">
               <label for="lname">Last Name *</label>
-              <input class="form-control" type="text" name="lastName" id="lname" //onmouseover="error1()">
+              <input class="form-control" type="text" name="lastName" id="lname" onmouseover="error1()">
             </div>
             <div class="form-group">
               <label for="email">Email Address *</label>
-              <input class="form-control" type="text" name="EmailAddress" id="emailAd." //onmouseover="error1()">
+              <input class="form-control" type="text" name="EmailAddress" id="email" onmouseover="error1()">
             </div>
             <div class="form-group">
               <button type="submit" class="btn btn-dark" onClick="error2()">Submit</button>
