@@ -26,15 +26,15 @@
         function yes(){
           alert("Sorry, you cannot see any details :)");
         }
-        function loop2(){
+        function searching(){
           var i;
           for(i=0; i < 5; i++){
             alert("Sorry! You cannot search!");
           }
         }
-        function loop3(){
+        function nosearch(){
           var i;
-          for(i=0; i < 9; i++){
+          for(i=0; i < 5; i++){
             alert("I told you that you can't search!");
           }
         }
@@ -51,9 +51,9 @@
         <li class="nav-item"><a href="trollabout.html" class="nav-link">About Us</a></li>
         <li class="nav-item"><a href="trollcontact.html" class="nav-link">Contact Us</a></li>
       </ul>
-        <form class="form-inline" action="/action_page.php">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" onClick="loop2()">
-            <button class="btn btn-light" type="submit" onClick="loop3()">Search</button>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" onClick="searching()">
+            <button class="btn btn-light" type="submit" onClick="nosearch()">Search</button>
         </form>
     </nav>
 
@@ -65,7 +65,7 @@
       <div class="row">
         <div class="col-sm-12 text-center">
           <h5>Subscribe to Our Newsletter!</h5>
-            <form class="form-inline justify-content-center" action="/action_page.php">
+            <form class="form-inline justify-content-center">
               <input type="email" class="form-control mb-2 mr-sm-2" id="email" placeholder="email address" name="email">
               <button type="button" class="btn btn-light mb-2" onClick="loop()">Subscribe</button>
             </form>
@@ -101,15 +101,14 @@
       </div>
       <br><br>
     </div>
-    <div class="container-fluid grey" style="background-color: ;">
+    <div class="container-fluid" style="background-color: #191919;">
       <div class="row">
         <div class="col-sm-12 text-center">
-          <p><b>HAILEY'S HORSE RESCUE, 350 RAMAPO VALLEY ROAD, MAHWAH, NJ 07430</b></p>
-          <p><b>INFO@HAILEYSHORSERESCUE.ORG</b></p>
           <br>
-          <p><b>Subscribe to our newsletter:</b></p>
+          <p class="text-light">Copyright © 2019 All Rights Reserved</p>
         </div>
       </div>
+    </div>
 
   </body>
 </html>
