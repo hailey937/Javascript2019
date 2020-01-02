@@ -39,3 +39,9 @@ Random Logic
         - Use else to specify a block of code to be executed, if the same condition is false
         - Use else if to specify a new condition to test, if the first condition is false
         - Use switch to select one of many blocks of code to be executed
+
+Form Validation:
+- Forms take in information
+- To validate a form means to check the information and make sure it is correct
+.length: how many characters are in something
+- || is "or"
