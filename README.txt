@@ -45,3 +45,7 @@ Form Validation:
 - To validate a form means to check the information and make sure it is correct
 .length: how many characters are in something
 - || is "or"
+
+=== - equal value and equal type/ used for strings/text - go through every part of the data so its exactly the same
+&& - and
+== - used for numbers - only goes so deep that it doesn't check that much
